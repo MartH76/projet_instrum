@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Nov 29 14:09:53 2021
+# Process ID: 11812
+# Current directory: G:/Projet_instrum_MHAH
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11112 G:\Projet_instrum_MHAH\Projet_instrum_MHAH.xpr
+# Log file: G:/Projet_instrum_MHAH/vivado.log
+# Journal file: G:/Projet_instrum_MHAH\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/Projet_instrum_MHAH/Projet_instrum_MHAH.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Projet_instrum_MHAH' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 1090.961 ; gain = 0.000
+update_compile_order -fileset sources_1

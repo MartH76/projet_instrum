@@ -1,0 +1,196 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jan  4 13:59:14 2022
+# Process ID: 7824
+# Current directory: D:/Projet_instrum_MHAH
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5892 D:\Projet_instrum_MHAH\Projet_instrum_MHAH.xpr
+# Log file: D:/Projet_instrum_MHAH/vivado.log
+# Journal file: D:/Projet_instrum_MHAH\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Projet_instrum_MHAH/Projet_instrum_MHAH.xpr
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sim_1/new/tb_division.vhd w ]
+add_files -fileset sim_1 D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sim_1/new/tb_division.vhd
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top division [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_division [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_division.tcl
+save_wave_config {D:/Projet_instrum_MHAH/tb_filter_behav.wcfg}
+run 200 ns
+run 1 ms
+save_wave_config {D:/Projet_instrum_MHAH/tb_filter_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_division.tcl
+save_wave_config {D:/Projet_instrum_MHAH/tb_filter_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_division.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_division.tcl
+save_wave_config {D:/Projet_instrum_MHAH/tb_filter_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_division.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_division.tcl
+run 100 ns
+close_sim
+launch_simulation
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_division.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_division.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_division.tcl
+save_wave_config {D:/Projet_instrum_MHAH/tb_filter_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_division.tcl
+launch_simulation -mode post-synthesis -type functional
+close_sim
+launch_simulation
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_division.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_division.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_division.tcl
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_division.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_division.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_division.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_division.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_division.tcl
+reset_run synth_1
+save_wave_config {D:/Projet_instrum_MHAH/tb_filter_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_division.tcl
+save_wave_config {D:/Projet_instrum_MHAH/tb_filter_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_division.tcl
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_division.tcl
+run 600 ns
+close_sim
+launch_simulation
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_division.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_division.tcl
+save_wave_config {D:/Projet_instrum_MHAH/tb_filter_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_division.tcl
+save_wave_config {D:/Projet_instrum_MHAH/tb_filter_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_division.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_division.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_division.tcl
+run 500 ns
+close_sim
+launch_simulation
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_division.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_division.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_division.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_division.tcl
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+run 10 us
+run 10 us
+close_sim
+launch_simulation
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_division.tcl
+run 500 ns
+run 500 ns
+close_sim

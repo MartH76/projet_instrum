@@ -1,0 +1,2036 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jan 17 13:36:06 2022
+# Process ID: 948
+# Current directory: D:/Projet_instrum_MHAH
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10788 D:\Projet_instrum_MHAH\Projet_instrum_MHAH.xpr
+# Log file: D:/Projet_instrum_MHAH/vivado.log
+# Journal file: D:/Projet_instrum_MHAH\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Projet_instrum_MHAH/Projet_instrum_MHAH.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 1114.977 ; gain = 0.000
+update_compile_order -fileset sources_1
+set_property top test_filter [current_fileset]
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-3
+Top: test_filter
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1484.547 ; gain = 250.738
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'test_filter' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/test_filter.vhd:43]
+INFO: [Synth 8-3491] module 'counter_1us' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/counter_1us.vhd:33' bound to instance 'U_counter_1us' of component 'counter_1us' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/test_filter.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'counter_1us' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/counter_1us.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'counter_1us' (1#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/counter_1us.vhd:39]
+INFO: [Synth 8-3491] module 'filter' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/filter.vhd:33' bound to instance 'U_filter' of component 'filter' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/test_filter.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'filter' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/filter.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'filter' (2#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/filter.vhd:41]
+INFO: [Synth 8-3491] module 'ADC_12b' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/ADC_12b.vhd:34' bound to instance 'U_ADC_12b' of component 'ADC_12b' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/test_filter.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'ADC_12b' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/ADC_12b.vhd:42]
+INFO: [Synth 8-3491] module 'ADC_global' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/ADC_global.vhd:14' bound to instance 'U_ADC_global' of component 'ADC_global' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/ADC_12b.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'ADC_global' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/ADC_global.vhd:24]
+INFO: [Synth 8-3491] module 'ADC' declared at 'd:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.vhd:56' bound to instance 'U_ADC' of component 'ADC' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/ADC_global.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'ADC' [d:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.vhd:80]
+	Parameter INIT_40 bound to: 16'b0000001000010011 
+	Parameter INIT_41 bound to: 16'b0011000110101111 
+	Parameter INIT_42 bound to: 16'b0000010000000000 
+	Parameter INIT_43 bound to: 16'b0000000000000000 
+	Parameter INIT_44 bound to: 16'b0000000000000000 
+	Parameter INIT_45 bound to: 16'b0000000000000000 
+	Parameter INIT_46 bound to: 16'b0000000000000000 
+	Parameter INIT_47 bound to: 16'b0000000000000000 
+	Parameter INIT_48 bound to: 16'b0000000100000000 
+	Parameter INIT_49 bound to: 16'b0000000000000000 
+	Parameter INIT_4A bound to: 16'b0000000000000000 
+	Parameter INIT_4B bound to: 16'b0000000000000000 
+	Parameter INIT_4C bound to: 16'b0000000000000000 
+	Parameter INIT_4D bound to: 16'b0000000000000000 
+	Parameter INIT_4E bound to: 16'b0000000000000000 
+	Parameter INIT_4F bound to: 16'b0000000000000000 
+	Parameter INIT_50 bound to: 16'b1011010111101101 
+	Parameter INIT_51 bound to: 16'b0101011111100100 
+	Parameter INIT_52 bound to: 16'b1010000101000111 
+	Parameter INIT_53 bound to: 16'b1100101000110011 
+	Parameter INIT_54 bound to: 16'b1010100100111010 
+	Parameter INIT_55 bound to: 16'b0101001011000110 
+	Parameter INIT_56 bound to: 16'b1001010101010101 
+	Parameter INIT_57 bound to: 16'b1010111001001110 
+	Parameter INIT_58 bound to: 16'b0101100110011001 
+	Parameter INIT_59 bound to: 16'b0000000000000000 
+	Parameter INIT_5A bound to: 16'b0000000000000000 
+	Parameter INIT_5B bound to: 16'b0000000000000000 
+	Parameter INIT_5C bound to: 16'b0101000100010001 
+	Parameter INIT_5D bound to: 16'b0000000000000000 
+	Parameter INIT_5E bound to: 16'b0000000000000000 
+	Parameter INIT_5F bound to: 16'b0000000000000000 
+	Parameter IS_CONVSTCLK_INVERTED bound to: 1'b0 
+	Parameter IS_DCLK_INVERTED bound to: 1'b0 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+	Parameter SIM_MONITOR_FILE bound to: design.txt - type: string 
+INFO: [Synth 8-113] binding component instance 'U0' to cell 'XADC' [d:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.vhd:147]
+INFO: [Synth 8-256] done synthesizing module 'ADC' (3#1) [d:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'ADC_global' (4#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/ADC_global.vhd:24]
+INFO: [Synth 8-3491] module 'counter_1us' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/counter_1us.vhd:33' bound to instance 'U_counter_1us' of component 'counter_1us' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/ADC_12b.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'ADC_12b' (5#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/ADC_12b.vhd:42]
+INFO: [Synth 8-3491] module 'registre_DAC' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/registre_DAC.vhd:14' bound to instance 'U_registre_DAC' of component 'registre_DAC' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/test_filter.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'registre_DAC' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/registre_DAC.vhd:21]
+WARNING: [Synth 8-614] signal 'value_in' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/registre_DAC.vhd:26]
+WARNING: [Synth 8-614] signal 'buffer1' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/registre_DAC.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'registre_DAC' (6#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/registre_DAC.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'test_filter' (7#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/test_filter.vhd:43]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1561.504 ; gain = 327.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1561.504 ; gain = 327.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1561.504 ; gain = 327.695
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1561.504 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.xdc] for cell 'U_ADC_12b/U_ADC_global/U_ADC/U0'
+Finished Parsing XDC File [d:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.xdc] for cell 'U_ADC_12b/U_ADC_global/U_ADC/U0'
+Parsing XDC File [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'BCD[0]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BCD[1]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BCD[2]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BCD[3]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BCD[4]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BCD[5]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BCD[6]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dp_int'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[0]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[1]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[2]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[3]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[4]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[5]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[6]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[7]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1646.145 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 1760.973 ; gain = 527.164
+27 Infos, 18 Warnings, 16 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:43 . Memory (MB): peak = 1760.973 ; gain = 645.996
+set_property top main [current_fileset]
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1840.148 ; gain = 55.090
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'main' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:45]
+INFO: [Synth 8-3491] module 'ADC_global' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/ADC_global.vhd:14' bound to instance 'U_ADC_global' of component 'ADC_global' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'ADC_global' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/ADC_global.vhd:24]
+INFO: [Synth 8-3491] module 'ADC' declared at 'd:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.vhd:56' bound to instance 'U_ADC' of component 'ADC' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/ADC_global.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'ADC' [d:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.vhd:80]
+	Parameter INIT_40 bound to: 16'b0000001000010011 
+	Parameter INIT_41 bound to: 16'b0011000110101111 
+	Parameter INIT_42 bound to: 16'b0000010000000000 
+	Parameter INIT_43 bound to: 16'b0000000000000000 
+	Parameter INIT_44 bound to: 16'b0000000000000000 
+	Parameter INIT_45 bound to: 16'b0000000000000000 
+	Parameter INIT_46 bound to: 16'b0000000000000000 
+	Parameter INIT_47 bound to: 16'b0000000000000000 
+	Parameter INIT_48 bound to: 16'b0000000100000000 
+	Parameter INIT_49 bound to: 16'b0000000000000000 
+	Parameter INIT_4A bound to: 16'b0000000000000000 
+	Parameter INIT_4B bound to: 16'b0000000000000000 
+	Parameter INIT_4C bound to: 16'b0000000000000000 
+	Parameter INIT_4D bound to: 16'b0000000000000000 
+	Parameter INIT_4E bound to: 16'b0000000000000000 
+	Parameter INIT_4F bound to: 16'b0000000000000000 
+	Parameter INIT_50 bound to: 16'b1011010111101101 
+	Parameter INIT_51 bound to: 16'b0101011111100100 
+	Parameter INIT_52 bound to: 16'b1010000101000111 
+	Parameter INIT_53 bound to: 16'b1100101000110011 
+	Parameter INIT_54 bound to: 16'b1010100100111010 
+	Parameter INIT_55 bound to: 16'b0101001011000110 
+	Parameter INIT_56 bound to: 16'b1001010101010101 
+	Parameter INIT_57 bound to: 16'b1010111001001110 
+	Parameter INIT_58 bound to: 16'b0101100110011001 
+	Parameter INIT_59 bound to: 16'b0000000000000000 
+	Parameter INIT_5A bound to: 16'b0000000000000000 
+	Parameter INIT_5B bound to: 16'b0000000000000000 
+	Parameter INIT_5C bound to: 16'b0101000100010001 
+	Parameter INIT_5D bound to: 16'b0000000000000000 
+	Parameter INIT_5E bound to: 16'b0000000000000000 
+	Parameter INIT_5F bound to: 16'b0000000000000000 
+	Parameter IS_CONVSTCLK_INVERTED bound to: 1'b0 
+	Parameter IS_DCLK_INVERTED bound to: 1'b0 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+	Parameter SIM_MONITOR_FILE bound to: design.txt - type: string 
+INFO: [Synth 8-113] binding component instance 'U0' to cell 'XADC' [d:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.vhd:147]
+INFO: [Synth 8-256] done synthesizing module 'ADC' (1#1) [d:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'ADC_global' (2#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/ADC_global.vhd:24]
+INFO: [Synth 8-3491] module 'counter_1us' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/counter_1us.vhd:33' bound to instance 'U_counter_1us' of component 'counter_1us' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'counter_1us' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/counter_1us.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'counter_1us' (3#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/counter_1us.vhd:39]
+INFO: [Synth 8-3491] module 'filter' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/filter.vhd:33' bound to instance 'U_filter' of component 'filter' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'filter' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/filter.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'filter' (4#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/filter.vhd:41]
+INFO: [Synth 8-3491] module 'deriv_ecret' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/deriv_ecret.vhd:14' bound to instance 'U_deriv_ecret' of component 'deriv_ecret' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'deriv_ecret' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/deriv_ecret.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'deriv_ecret' (5#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/deriv_ecret.vhd:22]
+INFO: [Synth 8-3491] module 'compt_period' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/compt_period.vhd:34' bound to instance 'U_compt_period' of component 'compt_period' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'compt_period' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/compt_period.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'compt_period' (6#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/compt_period.vhd:41]
+INFO: [Synth 8-3491] module 'division' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:34' bound to instance 'U_division' of component 'division' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'division' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:42]
+INFO: [Synth 8-226] default block is never used [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:59]
+INFO: [Synth 8-226] default block is never used [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:93]
+WARNING: [Synth 8-614] signal 'd' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:91]
+WARNING: [Synth 8-614] signal 'reste' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:91]
+WARNING: [Synth 8-614] signal 'diviseur' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:91]
+WARNING: [Synth 8-614] signal 'i' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:91]
+WARNING: [Synth 8-614] signal 'r_nb_per_buff' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:91]
+WARNING: [Synth 8-614] signal 'resultat' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:91]
+INFO: [Synth 8-256] done synthesizing module 'division' (7#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:42]
+INFO: [Synth 8-3491] module 'puissance_10' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:34' bound to instance 'U_puissance_10' of component 'puissance_10' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:179]
+INFO: [Synth 8-638] synthesizing module 'puissance_10' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:48]
+WARNING: [Synth 8-614] signal 's_frequency' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:64]
+WARNING: [Synth 8-614] signal 'frequency' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:107]
+WARNING: [Synth 8-614] signal 's_frequency' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:107]
+WARNING: [Synth 8-614] signal 'c_cent_mille' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:107]
+WARNING: [Synth 8-614] signal 'c_dix_mille' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:107]
+WARNING: [Synth 8-614] signal 'c_mille' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:107]
+WARNING: [Synth 8-614] signal 'c_cent' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:107]
+WARNING: [Synth 8-614] signal 'c_dix' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:107]
+WARNING: [Synth 8-614] signal 'c_un' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:107]
+WARNING: [Synth 8-614] signal 's_Hz' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:107]
+INFO: [Synth 8-256] done synthesizing module 'puissance_10' (8#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:48]
+INFO: [Synth 8-3491] module 'display_module' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_module.vhd:34' bound to instance 'U_display_modle' of component 'display_module' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'display_module' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_module.vhd:48]
+INFO: [Synth 8-3491] module 'display_decoder' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_decoder.vhd:32' bound to instance 'U_display_decoder' of component 'display_decoder' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_module.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'display_decoder' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_decoder.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'display_decoder' (9#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_decoder.vhd:38]
+INFO: [Synth 8-637] synthesizing blackbox instance 'U_data_ctrler' of component 'Data_ctrler' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_module.vhd:88]
+INFO: [Synth 8-3491] module 'AN_generator' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/AN_generator.vhd:35' bound to instance 'U_AN_generator' of component 'AN_generator' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_module.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'AN_generator' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/AN_generator.vhd:42]
+INFO: [Synth 8-637] synthesizing blackbox instance 'U_clk_divider' of component 'clk_divider' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/AN_generator.vhd:54]
+WARNING: [Synth 8-614] signal 'clk' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/AN_generator.vhd:60]
+WARNING: [Synth 8-614] signal 'AN_interne' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/AN_generator.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'AN_generator' (10#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/AN_generator.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'display_module' (11#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_module.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'main' (12#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:45]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1891.355 ; gain = 106.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1915.246 ; gain = 130.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1915.246 ; gain = 130.188
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1917.656 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.xdc] for cell 'U_ADC_global/U_ADC/U0'
+Finished Parsing XDC File [d:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.xdc] for cell 'U_ADC_global/U_ADC/U0'
+Parsing XDC File [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'AN[0]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'AN[1]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'AN[2]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'AN[3]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'AN[4]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'AN[5]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'AN[6]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'AN[7]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'global_output[0]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'global_output[1]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:86]
+WARNING: [Vivado 12-584] No ports matched 'global_output[2]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'global_output[3]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'global_output[4]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:89]
+WARNING: [Vivado 12-584] No ports matched 'global_output[5]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'global_output[6]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:91]
+WARNING: [Vivado 12-584] No ports matched 'global_output[7]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:92]
+Finished Parsing XDC File [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/main_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1917.656 ; gain = 132.598
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-22:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1917.656 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AA7733A
+open_hw_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 3389.266 ; gain = 1471.609
+set_property PROGRAM.FILE {D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/test_deriv_ecret.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan 17 14:26:25 2022] Launched synth_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1/runme.log
+[Mon Jan 17 14:26:25 2022] Launched impl_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan 17 14:29:35 2022] Launched impl_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan 17 14:31:10 2022] Launched synth_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1/runme.log
+[Mon Jan 17 14:31:10 2022] Launched impl_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/runme.log
+close [ open D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/clk_divider.vhd w ]
+add_files D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/clk_divider.vhd
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan 17 14:37:15 2022] Launched synth_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1/runme.log
+[Mon Jan 17 14:37:15 2022] Launched impl_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/runme.log
+add_files -norecurse D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/Data_ctrler.vhd
+WARNING: [filemgmt 56-12] File 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/Data_ctrler.vhd' cannot be added to the project because it already exists in the project, skipping this file
+add_files -norecurse D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/Data_ctrler.vhd
+WARNING: [filemgmt 56-12] File 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/Data_ctrler.vhd' cannot be added to the project because it already exists in the project, skipping this file
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan 17 14:43:40 2022] Launched synth_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1/runme.log
+[Mon Jan 17 14:43:40 2022] Launched impl_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/runme.log
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3548.691 ; gain = 83.977
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'main' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:45]
+INFO: [Synth 8-3491] module 'ADC_global' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/ADC_global.vhd:14' bound to instance 'U_ADC_global' of component 'ADC_global' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'ADC_global' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/ADC_global.vhd:24]
+INFO: [Synth 8-3491] module 'ADC' declared at 'd:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.vhd:56' bound to instance 'U_ADC' of component 'ADC' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/ADC_global.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'ADC' [d:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.vhd:80]
+	Parameter INIT_40 bound to: 16'b0000001000010011 
+	Parameter INIT_41 bound to: 16'b0011000110101111 
+	Parameter INIT_42 bound to: 16'b0000010000000000 
+	Parameter INIT_43 bound to: 16'b0000000000000000 
+	Parameter INIT_44 bound to: 16'b0000000000000000 
+	Parameter INIT_45 bound to: 16'b0000000000000000 
+	Parameter INIT_46 bound to: 16'b0000000000000000 
+	Parameter INIT_47 bound to: 16'b0000000000000000 
+	Parameter INIT_48 bound to: 16'b0000000100000000 
+	Parameter INIT_49 bound to: 16'b0000000000000000 
+	Parameter INIT_4A bound to: 16'b0000000000000000 
+	Parameter INIT_4B bound to: 16'b0000000000000000 
+	Parameter INIT_4C bound to: 16'b0000000000000000 
+	Parameter INIT_4D bound to: 16'b0000000000000000 
+	Parameter INIT_4E bound to: 16'b0000000000000000 
+	Parameter INIT_4F bound to: 16'b0000000000000000 
+	Parameter INIT_50 bound to: 16'b1011010111101101 
+	Parameter INIT_51 bound to: 16'b0101011111100100 
+	Parameter INIT_52 bound to: 16'b1010000101000111 
+	Parameter INIT_53 bound to: 16'b1100101000110011 
+	Parameter INIT_54 bound to: 16'b1010100100111010 
+	Parameter INIT_55 bound to: 16'b0101001011000110 
+	Parameter INIT_56 bound to: 16'b1001010101010101 
+	Parameter INIT_57 bound to: 16'b1010111001001110 
+	Parameter INIT_58 bound to: 16'b0101100110011001 
+	Parameter INIT_59 bound to: 16'b0000000000000000 
+	Parameter INIT_5A bound to: 16'b0000000000000000 
+	Parameter INIT_5B bound to: 16'b0000000000000000 
+	Parameter INIT_5C bound to: 16'b0101000100010001 
+	Parameter INIT_5D bound to: 16'b0000000000000000 
+	Parameter INIT_5E bound to: 16'b0000000000000000 
+	Parameter INIT_5F bound to: 16'b0000000000000000 
+	Parameter IS_CONVSTCLK_INVERTED bound to: 1'b0 
+	Parameter IS_DCLK_INVERTED bound to: 1'b0 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+	Parameter SIM_MONITOR_FILE bound to: design.txt - type: string 
+INFO: [Synth 8-113] binding component instance 'U0' to cell 'XADC' [d:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.vhd:147]
+INFO: [Synth 8-256] done synthesizing module 'ADC' (1#1) [d:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'ADC_global' (2#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/ADC_global.vhd:24]
+INFO: [Synth 8-3491] module 'counter_1us' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/counter_1us.vhd:33' bound to instance 'U_counter_1us' of component 'counter_1us' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'counter_1us' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/counter_1us.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'counter_1us' (3#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/counter_1us.vhd:39]
+INFO: [Synth 8-3491] module 'filter' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/filter.vhd:33' bound to instance 'U_filter' of component 'filter' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'filter' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/filter.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'filter' (4#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/filter.vhd:41]
+INFO: [Synth 8-3491] module 'deriv_ecret' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/deriv_ecret.vhd:14' bound to instance 'U_deriv_ecret' of component 'deriv_ecret' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'deriv_ecret' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/deriv_ecret.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'deriv_ecret' (5#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/deriv_ecret.vhd:22]
+INFO: [Synth 8-3491] module 'compt_period' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/compt_period.vhd:34' bound to instance 'U_compt_period' of component 'compt_period' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'compt_period' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/compt_period.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'compt_period' (6#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/compt_period.vhd:41]
+INFO: [Synth 8-3491] module 'division' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:34' bound to instance 'U_division' of component 'division' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'division' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:42]
+INFO: [Synth 8-226] default block is never used [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:59]
+INFO: [Synth 8-226] default block is never used [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:93]
+WARNING: [Synth 8-614] signal 'd' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:91]
+WARNING: [Synth 8-614] signal 'reste' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:91]
+WARNING: [Synth 8-614] signal 'diviseur' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:91]
+WARNING: [Synth 8-614] signal 'i' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:91]
+WARNING: [Synth 8-614] signal 'r_nb_per_buff' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:91]
+WARNING: [Synth 8-614] signal 'resultat' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:91]
+INFO: [Synth 8-256] done synthesizing module 'division' (7#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:42]
+INFO: [Synth 8-3491] module 'puissance_10' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:34' bound to instance 'U_puissance_10' of component 'puissance_10' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:179]
+INFO: [Synth 8-638] synthesizing module 'puissance_10' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:48]
+WARNING: [Synth 8-614] signal 's_frequency' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:64]
+WARNING: [Synth 8-614] signal 'frequency' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:107]
+WARNING: [Synth 8-614] signal 's_frequency' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:107]
+WARNING: [Synth 8-614] signal 'c_cent_mille' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:107]
+WARNING: [Synth 8-614] signal 'c_dix_mille' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:107]
+WARNING: [Synth 8-614] signal 'c_mille' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:107]
+WARNING: [Synth 8-614] signal 'c_cent' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:107]
+WARNING: [Synth 8-614] signal 'c_dix' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:107]
+WARNING: [Synth 8-614] signal 'c_un' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:107]
+WARNING: [Synth 8-614] signal 's_Hz' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:107]
+INFO: [Synth 8-256] done synthesizing module 'puissance_10' (8#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:48]
+INFO: [Synth 8-3491] module 'display_module' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_module.vhd:34' bound to instance 'U_display_modle' of component 'display_module' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'display_module' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_module.vhd:48]
+INFO: [Synth 8-3491] module 'display_decoder' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_decoder.vhd:32' bound to instance 'U_display_decoder' of component 'display_decoder' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_module.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'display_decoder' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_decoder.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'display_decoder' (9#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_decoder.vhd:38]
+INFO: [Synth 8-3491] module 'Data_ctrler' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/Data_ctrler.vhd:34' bound to instance 'U_data_ctrler' of component 'Data_ctrler' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_module.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'Data_ctrler' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/Data_ctrler.vhd:46]
+WARNING: [Synth 8-614] signal 'Hz' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/Data_ctrler.vhd:49]
+WARNING: [Synth 8-614] signal 'unit' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/Data_ctrler.vhd:49]
+WARNING: [Synth 8-614] signal 'ten' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/Data_ctrler.vhd:49]
+WARNING: [Synth 8-614] signal 'hundred' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/Data_ctrler.vhd:49]
+WARNING: [Synth 8-614] signal 'thousand' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/Data_ctrler.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'Data_ctrler' (10#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/Data_ctrler.vhd:46]
+INFO: [Synth 8-3491] module 'AN_generator' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/AN_generator.vhd:35' bound to instance 'U_AN_generator' of component 'AN_generator' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_module.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'AN_generator' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/AN_generator.vhd:42]
+INFO: [Synth 8-3491] module 'clk_divider' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/clk_divider.vhd:34' bound to instance 'U_clk_divider' of component 'clk_divider' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/AN_generator.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'clk_divider' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/clk_divider.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'clk_divider' (11#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/clk_divider.vhd:40]
+WARNING: [Synth 8-614] signal 'clk' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/AN_generator.vhd:60]
+WARNING: [Synth 8-614] signal 'AN_interne' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/AN_generator.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'AN_generator' (12#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/AN_generator.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'display_module' (13#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_module.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'main' (14#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:45]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3594.406 ; gain = 129.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3617.219 ; gain = 152.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3617.219 ; gain = 152.504
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 3620.594 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.xdc] for cell 'U_ADC_global/U_ADC/U0'
+Finished Parsing XDC File [d:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.xdc] for cell 'U_ADC_global/U_ADC/U0'
+Parsing XDC File [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:23 . Memory (MB): peak = 3755.566 ; gain = 290.852
+set_property top DAC_test [current_fileset]
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3851.707 ; gain = 1.352
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'DAC_test' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/DAC_test.vhd:20]
+INFO: [Synth 8-3491] module 'registre_DAC' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/registre_DAC.vhd:14' bound to instance 'U_registre_DAC' of component 'registre_DAC' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/DAC_test.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'registre_DAC' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/registre_DAC.vhd:21]
+WARNING: [Synth 8-614] signal 'value_in' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/registre_DAC.vhd:26]
+WARNING: [Synth 8-614] signal 'buffer1' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/registre_DAC.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'registre_DAC' (1#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/registre_DAC.vhd:21]
+INFO: [Synth 8-3491] module 'compteur_8bits' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/compteur_8bits.vhd:5' bound to instance 'U_compteur_8bits' of component 'compteur_8bits' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/DAC_test.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'compteur_8bits' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/compteur_8bits.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'compteur_8bits' (2#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/compteur_8bits.vhd:10]
+INFO: [Synth 8-3491] module 'counter_10us' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/counter_10us.vhd:33' bound to instance 'U_counter_10us' of component 'counter_10us' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/DAC_test.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'counter_10us' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/counter_10us.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'counter_10us' (3#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/counter_10us.vhd:39]
+INFO: [Synth 8-3491] module 'counter_1us' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/counter_1us.vhd:33' bound to instance 'U_counter_1us' of component 'counter_1us' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/DAC_test.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'counter_1us' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/counter_1us.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'counter_1us' (4#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/counter_1us.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'DAC_test' (5#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/DAC_test.vhd:20]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3851.707 ; gain = 1.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3851.707 ; gain = 1.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3851.707 ; gain = 1.352
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3852.816 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'BCD[0]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BCD[1]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BCD[2]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BCD[3]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BCD[4]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BCD[5]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BCD[6]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dp_int'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN_out[0]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN_out[1]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN_out[2]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN_out[3]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN_out[4]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN_out[5]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN_out[6]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN_out[7]'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'start'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxn3'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:125]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:125]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxp3'. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:126]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc:126]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 3852.816 ; gain = 2.461
+set_property top main [current_fileset]
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3852.816 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'main' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:45]
+INFO: [Synth 8-3491] module 'ADC_global' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/ADC_global.vhd:14' bound to instance 'U_ADC_global' of component 'ADC_global' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'ADC_global' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/ADC_global.vhd:24]
+INFO: [Synth 8-3491] module 'ADC' declared at 'd:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.vhd:56' bound to instance 'U_ADC' of component 'ADC' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/ADC_global.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'ADC' [d:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.vhd:80]
+	Parameter INIT_40 bound to: 16'b0000001000010011 
+	Parameter INIT_41 bound to: 16'b0011000110101111 
+	Parameter INIT_42 bound to: 16'b0000010000000000 
+	Parameter INIT_43 bound to: 16'b0000000000000000 
+	Parameter INIT_44 bound to: 16'b0000000000000000 
+	Parameter INIT_45 bound to: 16'b0000000000000000 
+	Parameter INIT_46 bound to: 16'b0000000000000000 
+	Parameter INIT_47 bound to: 16'b0000000000000000 
+	Parameter INIT_48 bound to: 16'b0000000100000000 
+	Parameter INIT_49 bound to: 16'b0000000000000000 
+	Parameter INIT_4A bound to: 16'b0000000000000000 
+	Parameter INIT_4B bound to: 16'b0000000000000000 
+	Parameter INIT_4C bound to: 16'b0000000000000000 
+	Parameter INIT_4D bound to: 16'b0000000000000000 
+	Parameter INIT_4E bound to: 16'b0000000000000000 
+	Parameter INIT_4F bound to: 16'b0000000000000000 
+	Parameter INIT_50 bound to: 16'b1011010111101101 
+	Parameter INIT_51 bound to: 16'b0101011111100100 
+	Parameter INIT_52 bound to: 16'b1010000101000111 
+	Parameter INIT_53 bound to: 16'b1100101000110011 
+	Parameter INIT_54 bound to: 16'b1010100100111010 
+	Parameter INIT_55 bound to: 16'b0101001011000110 
+	Parameter INIT_56 bound to: 16'b1001010101010101 
+	Parameter INIT_57 bound to: 16'b1010111001001110 
+	Parameter INIT_58 bound to: 16'b0101100110011001 
+	Parameter INIT_59 bound to: 16'b0000000000000000 
+	Parameter INIT_5A bound to: 16'b0000000000000000 
+	Parameter INIT_5B bound to: 16'b0000000000000000 
+	Parameter INIT_5C bound to: 16'b0101000100010001 
+	Parameter INIT_5D bound to: 16'b0000000000000000 
+	Parameter INIT_5E bound to: 16'b0000000000000000 
+	Parameter INIT_5F bound to: 16'b0000000000000000 
+	Parameter IS_CONVSTCLK_INVERTED bound to: 1'b0 
+	Parameter IS_DCLK_INVERTED bound to: 1'b0 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+	Parameter SIM_MONITOR_FILE bound to: design.txt - type: string 
+INFO: [Synth 8-113] binding component instance 'U0' to cell 'XADC' [d:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.vhd:147]
+INFO: [Synth 8-256] done synthesizing module 'ADC' (1#1) [d:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'ADC_global' (2#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/ADC_global.vhd:24]
+INFO: [Synth 8-3491] module 'counter_1us' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/counter_1us.vhd:33' bound to instance 'U_counter_1us' of component 'counter_1us' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'counter_1us' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/counter_1us.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'counter_1us' (3#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/counter_1us.vhd:39]
+INFO: [Synth 8-3491] module 'filter' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/filter.vhd:33' bound to instance 'U_filter' of component 'filter' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'filter' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/filter.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'filter' (4#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/filter.vhd:41]
+INFO: [Synth 8-3491] module 'deriv_ecret' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/deriv_ecret.vhd:14' bound to instance 'U_deriv_ecret' of component 'deriv_ecret' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'deriv_ecret' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/deriv_ecret.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'deriv_ecret' (5#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/deriv_ecret.vhd:22]
+INFO: [Synth 8-3491] module 'compt_period' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/compt_period.vhd:34' bound to instance 'U_compt_period' of component 'compt_period' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'compt_period' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/compt_period.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'compt_period' (6#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/compt_period.vhd:41]
+INFO: [Synth 8-3491] module 'division' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:34' bound to instance 'U_division' of component 'division' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'division' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:42]
+INFO: [Synth 8-226] default block is never used [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:59]
+INFO: [Synth 8-226] default block is never used [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:93]
+WARNING: [Synth 8-614] signal 'd' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:91]
+WARNING: [Synth 8-614] signal 'reste' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:91]
+WARNING: [Synth 8-614] signal 'diviseur' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:91]
+WARNING: [Synth 8-614] signal 'i' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:91]
+WARNING: [Synth 8-614] signal 'r_nb_per_buff' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:91]
+WARNING: [Synth 8-614] signal 'resultat' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:91]
+INFO: [Synth 8-256] done synthesizing module 'division' (7#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:42]
+INFO: [Synth 8-3491] module 'puissance_10' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:34' bound to instance 'U_puissance_10' of component 'puissance_10' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:179]
+INFO: [Synth 8-638] synthesizing module 'puissance_10' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:48]
+WARNING: [Synth 8-614] signal 's_frequency' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:64]
+WARNING: [Synth 8-614] signal 'frequency' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:107]
+WARNING: [Synth 8-614] signal 's_frequency' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:107]
+WARNING: [Synth 8-614] signal 'c_cent_mille' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:107]
+WARNING: [Synth 8-614] signal 'c_dix_mille' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:107]
+WARNING: [Synth 8-614] signal 'c_mille' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:107]
+WARNING: [Synth 8-614] signal 'c_cent' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:107]
+WARNING: [Synth 8-614] signal 'c_dix' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:107]
+WARNING: [Synth 8-614] signal 'c_un' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:107]
+WARNING: [Synth 8-614] signal 's_Hz' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:107]
+INFO: [Synth 8-256] done synthesizing module 'puissance_10' (8#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:48]
+INFO: [Synth 8-3491] module 'display_module' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_module.vhd:34' bound to instance 'U_display_modle' of component 'display_module' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'display_module' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_module.vhd:48]
+INFO: [Synth 8-3491] module 'display_decoder' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_decoder.vhd:32' bound to instance 'U_display_decoder' of component 'display_decoder' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_module.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'display_decoder' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_decoder.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'display_decoder' (9#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_decoder.vhd:38]
+INFO: [Synth 8-3491] module 'Data_ctrler' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/Data_ctrler.vhd:34' bound to instance 'U_data_ctrler' of component 'Data_ctrler' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_module.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'Data_ctrler' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/Data_ctrler.vhd:46]
+WARNING: [Synth 8-614] signal 'Hz' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/Data_ctrler.vhd:49]
+WARNING: [Synth 8-614] signal 'unit' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/Data_ctrler.vhd:49]
+WARNING: [Synth 8-614] signal 'ten' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/Data_ctrler.vhd:49]
+WARNING: [Synth 8-614] signal 'hundred' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/Data_ctrler.vhd:49]
+WARNING: [Synth 8-614] signal 'thousand' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/Data_ctrler.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'Data_ctrler' (10#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/Data_ctrler.vhd:46]
+INFO: [Synth 8-3491] module 'AN_generator' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/AN_generator.vhd:35' bound to instance 'U_AN_generator' of component 'AN_generator' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_module.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'AN_generator' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/AN_generator.vhd:42]
+INFO: [Synth 8-3491] module 'clk_divider' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/clk_divider.vhd:34' bound to instance 'U_clk_divider' of component 'clk_divider' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/AN_generator.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'clk_divider' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/clk_divider.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'clk_divider' (11#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/clk_divider.vhd:40]
+WARNING: [Synth 8-614] signal 'clk' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/AN_generator.vhd:60]
+WARNING: [Synth 8-614] signal 'AN_interne' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/AN_generator.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'AN_generator' (12#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/AN_generator.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'display_module' (13#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_module.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'main' (14#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:45]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3852.816 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3852.816 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3852.816 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 3852.816 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.xdc] for cell 'U_ADC_global/U_ADC/U0'
+Finished Parsing XDC File [d:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.xdc] for cell 'U_ADC_global/U_ADC/U0'
+Parsing XDC File [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 3852.816 ; gain = 0.000
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 3852.816 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 203 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.326 . Memory (MB): peak = 4294.570 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.328 . Memory (MB): peak = 4294.570 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4294.570 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 4361.336 ; gain = 508.520
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan 17 15:09:14 2022] Launched synth_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1/runme.log
+[Mon Jan 17 15:09:14 2022] Launched impl_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/test_deriv_ecret.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan 17 15:19:55 2022] Launched synth_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1/runme.log
+[Mon Jan 17 15:19:55 2022] Launched impl_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan 17 15:26:05 2022] Launched synth_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1/runme.log
+[Mon Jan 17 15:26:06 2022] Launched impl_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/test_deriv_ecret.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+current_design rtl_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 4445.359 ; gain = 68.918
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'main' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:45]
+INFO: [Synth 8-3491] module 'ADC_global' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/ADC_global.vhd:14' bound to instance 'U_ADC_global' of component 'ADC_global' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'ADC_global' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/ADC_global.vhd:24]
+INFO: [Synth 8-3491] module 'ADC' declared at 'd:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.vhd:56' bound to instance 'U_ADC' of component 'ADC' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/ADC_global.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'ADC' [d:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.vhd:80]
+	Parameter INIT_40 bound to: 16'b0000001000010011 
+	Parameter INIT_41 bound to: 16'b0011000110101111 
+	Parameter INIT_42 bound to: 16'b0000010000000000 
+	Parameter INIT_43 bound to: 16'b0000000000000000 
+	Parameter INIT_44 bound to: 16'b0000000000000000 
+	Parameter INIT_45 bound to: 16'b0000000000000000 
+	Parameter INIT_46 bound to: 16'b0000000000000000 
+	Parameter INIT_47 bound to: 16'b0000000000000000 
+	Parameter INIT_48 bound to: 16'b0000000100000000 
+	Parameter INIT_49 bound to: 16'b0000000000000000 
+	Parameter INIT_4A bound to: 16'b0000000000000000 
+	Parameter INIT_4B bound to: 16'b0000000000000000 
+	Parameter INIT_4C bound to: 16'b0000000000000000 
+	Parameter INIT_4D bound to: 16'b0000000000000000 
+	Parameter INIT_4E bound to: 16'b0000000000000000 
+	Parameter INIT_4F bound to: 16'b0000000000000000 
+	Parameter INIT_50 bound to: 16'b1011010111101101 
+	Parameter INIT_51 bound to: 16'b0101011111100100 
+	Parameter INIT_52 bound to: 16'b1010000101000111 
+	Parameter INIT_53 bound to: 16'b1100101000110011 
+	Parameter INIT_54 bound to: 16'b1010100100111010 
+	Parameter INIT_55 bound to: 16'b0101001011000110 
+	Parameter INIT_56 bound to: 16'b1001010101010101 
+	Parameter INIT_57 bound to: 16'b1010111001001110 
+	Parameter INIT_58 bound to: 16'b0101100110011001 
+	Parameter INIT_59 bound to: 16'b0000000000000000 
+	Parameter INIT_5A bound to: 16'b0000000000000000 
+	Parameter INIT_5B bound to: 16'b0000000000000000 
+	Parameter INIT_5C bound to: 16'b0101000100010001 
+	Parameter INIT_5D bound to: 16'b0000000000000000 
+	Parameter INIT_5E bound to: 16'b0000000000000000 
+	Parameter INIT_5F bound to: 16'b0000000000000000 
+	Parameter IS_CONVSTCLK_INVERTED bound to: 1'b0 
+	Parameter IS_DCLK_INVERTED bound to: 1'b0 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+	Parameter SIM_MONITOR_FILE bound to: design.txt - type: string 
+INFO: [Synth 8-113] binding component instance 'U0' to cell 'XADC' [d:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.vhd:147]
+INFO: [Synth 8-256] done synthesizing module 'ADC' (1#1) [d:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'ADC_global' (2#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/ADC_global.vhd:24]
+INFO: [Synth 8-3491] module 'counter_1us' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/counter_1us.vhd:33' bound to instance 'U_counter_1us' of component 'counter_1us' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'counter_1us' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/counter_1us.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'counter_1us' (3#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/counter_1us.vhd:39]
+INFO: [Synth 8-3491] module 'filter' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/filter.vhd:33' bound to instance 'U_filter' of component 'filter' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'filter' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/filter.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'filter' (4#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/filter.vhd:41]
+INFO: [Synth 8-3491] module 'deriv_ecret' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/deriv_ecret.vhd:14' bound to instance 'U_deriv_ecret' of component 'deriv_ecret' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'deriv_ecret' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/deriv_ecret.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'deriv_ecret' (5#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/deriv_ecret.vhd:22]
+INFO: [Synth 8-3491] module 'compt_period' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/compt_period.vhd:34' bound to instance 'U_compt_period' of component 'compt_period' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'compt_period' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/compt_period.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'compt_period' (6#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/compt_period.vhd:41]
+INFO: [Synth 8-3491] module 'division' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:34' bound to instance 'U_division' of component 'division' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'division' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:42]
+INFO: [Synth 8-226] default block is never used [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:59]
+INFO: [Synth 8-226] default block is never used [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:93]
+WARNING: [Synth 8-614] signal 'd' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:91]
+INFO: [Synth 8-256] done synthesizing module 'division' (7#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:42]
+INFO: [Synth 8-3491] module 'puissance_10' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:34' bound to instance 'U_puissance_10' of component 'puissance_10' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:179]
+INFO: [Synth 8-638] synthesizing module 'puissance_10' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:48]
+WARNING: [Synth 8-614] signal 'c_cent' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:107]
+INFO: [Synth 8-256] done synthesizing module 'puissance_10' (8#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:48]
+INFO: [Synth 8-3491] module 'display_module' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_module.vhd:34' bound to instance 'U_display_modle' of component 'display_module' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'display_module' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_module.vhd:48]
+INFO: [Synth 8-3491] module 'display_decoder' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_decoder.vhd:32' bound to instance 'U_display_decoder' of component 'display_decoder' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_module.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'display_decoder' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_decoder.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'display_decoder' (9#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_decoder.vhd:38]
+INFO: [Synth 8-3491] module 'Data_ctrler' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/Data_ctrler.vhd:34' bound to instance 'U_data_ctrler' of component 'Data_ctrler' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_module.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'Data_ctrler' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/Data_ctrler.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'Data_ctrler' (10#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/Data_ctrler.vhd:46]
+INFO: [Synth 8-3491] module 'AN_generator' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/AN_generator.vhd:35' bound to instance 'U_AN_generator' of component 'AN_generator' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_module.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'AN_generator' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/AN_generator.vhd:42]
+INFO: [Synth 8-3491] module 'clk_divider' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/clk_divider.vhd:34' bound to instance 'U_clk_divider' of component 'clk_divider' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/AN_generator.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'clk_divider' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/clk_divider.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'clk_divider' (11#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/clk_divider.vhd:40]
+WARNING: [Synth 8-614] signal 'AN_interne' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/AN_generator.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'AN_generator' (12#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/AN_generator.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'display_module' (13#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_module.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'main' (14#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/main.vhd:45]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 4484.598 ; gain = 108.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 4507.422 ; gain = 130.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 4507.422 ; gain = 130.980
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 4509.758 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.xdc] for cell 'U_ADC_global/U_ADC/U0'
+Finished Parsing XDC File [d:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.xdc] for cell 'U_ADC_global/U_ADC/U0'
+Parsing XDC File [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 4509.758 ; gain = 133.316
+reset_run synth_1
+close [ open D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/test_main_fin.vhd w ]
+add_files D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/test_main_fin.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property top test_main_fin [current_fileset]
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 4509.758 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'test_main_fin' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/test_main_fin.vhd:45]
+INFO: [Synth 8-3491] module 'ADC_global' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/ADC_global.vhd:14' bound to instance 'U_ADC_global' of component 'ADC_global' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/test_main_fin.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'ADC_global' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/ADC_global.vhd:24]
+INFO: [Synth 8-3491] module 'ADC' declared at 'd:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.vhd:56' bound to instance 'U_ADC' of component 'ADC' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/ADC_global.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'ADC' [d:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.vhd:80]
+	Parameter INIT_40 bound to: 16'b0000001000010011 
+	Parameter INIT_41 bound to: 16'b0011000110101111 
+	Parameter INIT_42 bound to: 16'b0000010000000000 
+	Parameter INIT_43 bound to: 16'b0000000000000000 
+	Parameter INIT_44 bound to: 16'b0000000000000000 
+	Parameter INIT_45 bound to: 16'b0000000000000000 
+	Parameter INIT_46 bound to: 16'b0000000000000000 
+	Parameter INIT_47 bound to: 16'b0000000000000000 
+	Parameter INIT_48 bound to: 16'b0000000100000000 
+	Parameter INIT_49 bound to: 16'b0000000000000000 
+	Parameter INIT_4A bound to: 16'b0000000000000000 
+	Parameter INIT_4B bound to: 16'b0000000000000000 
+	Parameter INIT_4C bound to: 16'b0000000000000000 
+	Parameter INIT_4D bound to: 16'b0000000000000000 
+	Parameter INIT_4E bound to: 16'b0000000000000000 
+	Parameter INIT_4F bound to: 16'b0000000000000000 
+	Parameter INIT_50 bound to: 16'b1011010111101101 
+	Parameter INIT_51 bound to: 16'b0101011111100100 
+	Parameter INIT_52 bound to: 16'b1010000101000111 
+	Parameter INIT_53 bound to: 16'b1100101000110011 
+	Parameter INIT_54 bound to: 16'b1010100100111010 
+	Parameter INIT_55 bound to: 16'b0101001011000110 
+	Parameter INIT_56 bound to: 16'b1001010101010101 
+	Parameter INIT_57 bound to: 16'b1010111001001110 
+	Parameter INIT_58 bound to: 16'b0101100110011001 
+	Parameter INIT_59 bound to: 16'b0000000000000000 
+	Parameter INIT_5A bound to: 16'b0000000000000000 
+	Parameter INIT_5B bound to: 16'b0000000000000000 
+	Parameter INIT_5C bound to: 16'b0101000100010001 
+	Parameter INIT_5D bound to: 16'b0000000000000000 
+	Parameter INIT_5E bound to: 16'b0000000000000000 
+	Parameter INIT_5F bound to: 16'b0000000000000000 
+	Parameter IS_CONVSTCLK_INVERTED bound to: 1'b0 
+	Parameter IS_DCLK_INVERTED bound to: 1'b0 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+	Parameter SIM_MONITOR_FILE bound to: design.txt - type: string 
+INFO: [Synth 8-113] binding component instance 'U0' to cell 'XADC' [d:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.vhd:147]
+INFO: [Synth 8-256] done synthesizing module 'ADC' (1#1) [d:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'ADC_global' (2#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/ADC_global.vhd:24]
+INFO: [Synth 8-3491] module 'counter_1us' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/counter_1us.vhd:33' bound to instance 'U_counter_1us' of component 'counter_1us' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/test_main_fin.vhd:147]
+INFO: [Synth 8-638] synthesizing module 'counter_1us' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/counter_1us.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'counter_1us' (3#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/counter_1us.vhd:39]
+INFO: [Synth 8-3491] module 'filter' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/filter.vhd:33' bound to instance 'U_filter' of component 'filter' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/test_main_fin.vhd:152]
+INFO: [Synth 8-638] synthesizing module 'filter' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/filter.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'filter' (4#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/filter.vhd:41]
+INFO: [Synth 8-3491] module 'deriv_ecret' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/deriv_ecret.vhd:14' bound to instance 'U_deriv_ecret' of component 'deriv_ecret' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/test_main_fin.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'deriv_ecret' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/deriv_ecret.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'deriv_ecret' (5#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/deriv_ecret.vhd:22]
+INFO: [Synth 8-3491] module 'compt_period' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/compt_period.vhd:34' bound to instance 'U_compt_period' of component 'compt_period' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/test_main_fin.vhd:166]
+INFO: [Synth 8-638] synthesizing module 'compt_period' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/compt_period.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'compt_period' (6#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/compt_period.vhd:41]
+INFO: [Synth 8-3491] module 'division' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:34' bound to instance 'U_division' of component 'division' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/test_main_fin.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'division' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:42]
+INFO: [Synth 8-226] default block is never used [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:59]
+INFO: [Synth 8-226] default block is never used [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:93]
+WARNING: [Synth 8-614] signal 'd' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:91]
+INFO: [Synth 8-256] done synthesizing module 'division' (7#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:42]
+INFO: [Synth 8-3491] module 'puissance_10' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:34' bound to instance 'U_puissance_10' of component 'puissance_10' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/test_main_fin.vhd:180]
+INFO: [Synth 8-638] synthesizing module 'puissance_10' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:48]
+WARNING: [Synth 8-614] signal 'c_cent' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:107]
+INFO: [Synth 8-256] done synthesizing module 'puissance_10' (8#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd:48]
+INFO: [Synth 8-3491] module 'display_module' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_module.vhd:34' bound to instance 'U_display_modle' of component 'display_module' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/test_main_fin.vhd:193]
+INFO: [Synth 8-638] synthesizing module 'display_module' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_module.vhd:48]
+INFO: [Synth 8-3491] module 'display_decoder' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_decoder.vhd:32' bound to instance 'U_display_decoder' of component 'display_decoder' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_module.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'display_decoder' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_decoder.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'display_decoder' (9#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_decoder.vhd:38]
+INFO: [Synth 8-3491] module 'Data_ctrler' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/Data_ctrler.vhd:34' bound to instance 'U_data_ctrler' of component 'Data_ctrler' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_module.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'Data_ctrler' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/Data_ctrler.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'Data_ctrler' (10#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/Data_ctrler.vhd:46]
+INFO: [Synth 8-3491] module 'AN_generator' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/AN_generator.vhd:35' bound to instance 'U_AN_generator' of component 'AN_generator' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_module.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'AN_generator' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/AN_generator.vhd:42]
+INFO: [Synth 8-3491] module 'clk_divider' declared at 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/clk_divider.vhd:34' bound to instance 'U_clk_divider' of component 'clk_divider' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/AN_generator.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'clk_divider' [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/clk_divider.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'clk_divider' (11#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/clk_divider.vhd:40]
+WARNING: [Synth 8-614] signal 'AN_interne' is read in the process but is not in the sensitivity list [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/AN_generator.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'AN_generator' (12#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/AN_generator.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'display_module' (13#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/display_module.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'test_main_fin' (14#1) [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/test_main_fin.vhd:45]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4509.758 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4523.871 ; gain = 14.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4523.871 ; gain = 14.113
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 4525.023 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.xdc] for cell 'U_ADC_global/U_ADC/U0'
+Finished Parsing XDC File [d:/Projet_instrum_MHAH/Projet_instrum_MHAH.gen/sources_1/ip/ADC/ADC.xdc] for cell 'U_ADC_global/U_ADC/U0'
+Parsing XDC File [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/constrs_1/new/constraints.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 4525.023 ; gain = 15.266
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan 17 15:45:39 2022] Launched synth_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1/runme.log
+[Mon Jan 17 15:45:39 2022] Launched impl_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/test_main_fin.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property top tb_puissance_10 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_puissance_10' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_puissance_10_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'puissance_10'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sim_1/new/tb_puissance_10.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_puissance_10'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+"xelab -wto 78de84b91bcf4d27b7efd64ed4731d67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot tb_puissance_10_behav xil_defaultlib.tb_puissance_10 -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 78de84b91bcf4d27b7efd64ed4731d67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot tb_puissance_10_behav xil_defaultlib.tb_puissance_10 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.puissance_10 [puissance_10_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_puissance_10
+Built simulation snapshot tb_puissance_10_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim/xsim.dir/tb_puissance_10_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Jan 17 16:00:08 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 4606.875 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_puissance_10_behav -key {Behavioral:sim_1:Functional:tb_puissance_10} -tclbatch {tb_puissance_10.tcl} -view {D:/Projet_instrum_MHAH/tb_filter_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+WARNING: Simulation object /tb_compt_period/compt1/start was not found in the design.
+WARNING: Simulation object /tb_compt_period/compt1/clk was not found in the design.
+WARNING: Simulation object /tb_compt_period/compt1/yk was not found in the design.
+WARNING: Simulation object /tb_compt_period/compt1/yk_1 was not found in the design.
+WARNING: Simulation object /tb_compt_period/compt1/output_ecret was not found in the design.
+WARNING: Simulation object /tb_compt_period/compt1/s_cpt was not found in the design.
+WARNING: Simulation object /tb_compt_period/compt1/comptage_term was not found in the design.
+WARNING: Simulation object /tb_compt_period/compt1/compteurf was not found in the design.
+WARNING: Simulation object /tb_compt_period/compt1/nb_period was not found in the design.
+source tb_puissance_10.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+FATAL_ERROR: Iteration limit 10000 is reached. Possible zero delay oscillation detected where simulation time can not advance. Please check your source code. Note that the iteration limit can be changed using switch -maxdeltaid.
+Time: 70 ns  Iteration: 10000
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 4612.527 ; gain = 5.527
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_puissance_10_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:23 . Memory (MB): peak = 4612.527 ; gain = 5.949
+run 10ns
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10ns
+run 500ns
+FATAL_ERROR: Iteration limit 10000 is reached. Possible zero delay oscillation detected where simulation time can not advance. Please check your source code. Note that the iteration limit can be changed using switch -maxdeltaid.
+Time: 70 ns  Iteration: 10000
+run 1ms
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1ms
+FATAL_ERROR: Iteration limit 10000 is reached. Possible zero delay oscillation detected where simulation time can not advance. Please check your source code. Note that the iteration limit can be changed using switch -maxdeltaid.
+Time: 70 ns  Iteration: 10000
+set_property top puissance_10 [current_fileset]
+update_compile_order -fileset sources_1
+save_wave_config {D:/Projet_instrum_MHAH/tb_filter_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 4642.719 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_puissance_10' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_puissance_10_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+"xelab -wto 78de84b91bcf4d27b7efd64ed4731d67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot tb_puissance_10_behav xil_defaultlib.tb_puissance_10 -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 78de84b91bcf4d27b7efd64ed4731d67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot tb_puissance_10_behav xil_defaultlib.tb_puissance_10 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_puissance_10_behav -key {Behavioral:sim_1:Functional:tb_puissance_10} -tclbatch {tb_puissance_10.tcl} -view {D:/Projet_instrum_MHAH/tb_filter_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_puissance_10.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+FATAL_ERROR: Iteration limit 10000 is reached. Possible zero delay oscillation detected where simulation time can not advance. Please check your source code. Note that the iteration limit can be changed using switch -maxdeltaid.
+Time: 70 ns  Iteration: 10000
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 4642.719 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_puissance_10_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 4642.719 ; gain = 0.000
+run 1ms
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+add_bp {D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd} 159
+remove_bps -file {D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd} -line 159
+add_bp {D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd} 160
+remove_bps -file {D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd} -line 160
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 4642.719 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_puissance_10' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_puissance_10_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'puissance_10'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+"xelab -wto 78de84b91bcf4d27b7efd64ed4731d67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot tb_puissance_10_behav xil_defaultlib.tb_puissance_10 -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 78de84b91bcf4d27b7efd64ed4731d67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot tb_puissance_10_behav xil_defaultlib.tb_puissance_10 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.puissance_10 [puissance_10_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_puissance_10
+Built simulation snapshot tb_puissance_10_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim/xsim.dir/tb_puissance_10_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Jan 17 16:07:15 2022...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 4642.719 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_puissance_10_behav -key {Behavioral:sim_1:Functional:tb_puissance_10} -tclbatch {tb_puissance_10.tcl} -view {D:/Projet_instrum_MHAH/tb_filter_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_puissance_10.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+FATAL_ERROR: Iteration limit 10000 is reached. Possible zero delay oscillation detected where simulation time can not advance. Please check your source code. Note that the iteration limit can be changed using switch -maxdeltaid.
+Time: 70 ns  Iteration: 10000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_puissance_10_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 4642.719 ; gain = 0.000
+run 1ms
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 4642.719 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_puissance_10' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_puissance_10_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'puissance_10'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+"xelab -wto 78de84b91bcf4d27b7efd64ed4731d67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot tb_puissance_10_behav xil_defaultlib.tb_puissance_10 -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 78de84b91bcf4d27b7efd64ed4731d67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot tb_puissance_10_behav xil_defaultlib.tb_puissance_10 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.puissance_10 [puissance_10_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_puissance_10
+Built simulation snapshot tb_puissance_10_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim/xsim.dir/tb_puissance_10_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Jan 17 16:14:01 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 4642.719 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_puissance_10_behav -key {Behavioral:sim_1:Functional:tb_puissance_10} -tclbatch {tb_puissance_10.tcl} -view {D:/Projet_instrum_MHAH/tb_filter_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_puissance_10.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 4642.719 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_puissance_10_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 4642.719 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan 17 16:14:47 2022] Launched synth_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1/runme.log
+[Mon Jan 17 16:14:47 2022] Launched impl_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+set_property top test_main_fin [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan 17 16:18:04 2022] Launched synth_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1/runme.log
+[Mon Jan 17 16:18:04 2022] Launched impl_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/test_main_fin.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 4648.898 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_puissance_10' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_puissance_10_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+"xelab -wto 78de84b91bcf4d27b7efd64ed4731d67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot tb_puissance_10_behav xil_defaultlib.tb_puissance_10 -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 78de84b91bcf4d27b7efd64ed4731d67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot tb_puissance_10_behav xil_defaultlib.tb_puissance_10 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_puissance_10_behav -key {Behavioral:sim_1:Functional:tb_puissance_10} -tclbatch {tb_puissance_10.tcl} -view {D:/Projet_instrum_MHAH/tb_filter_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_puissance_10.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_puissance_10_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 4648.898 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan 17 16:35:13 2022] Launched synth_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1/runme.log
+[Mon Jan 17 16:35:13 2022] Launched impl_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan 17 16:41:45 2022] Launched synth_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1/runme.log
+[Mon Jan 17 16:41:46 2022] Launched impl_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/test_main_fin.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/test_main_fin.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+save_wave_config {D:/Projet_instrum_MHAH/tb_filter_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 5052.441 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_puissance_10' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_puissance_10_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'puissance_10'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+"xelab -wto 78de84b91bcf4d27b7efd64ed4731d67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot tb_puissance_10_behav xil_defaultlib.tb_puissance_10 -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 78de84b91bcf4d27b7efd64ed4731d67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot tb_puissance_10_behav xil_defaultlib.tb_puissance_10 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.puissance_10 [puissance_10_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_puissance_10
+Built simulation snapshot tb_puissance_10_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim/xsim.dir/tb_puissance_10_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Jan 17 16:46:52 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 5052.441 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_puissance_10_behav -key {Behavioral:sim_1:Functional:tb_puissance_10} -tclbatch {tb_puissance_10.tcl} -view {D:/Projet_instrum_MHAH/tb_filter_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_puissance_10.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_puissance_10_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 5052.441 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan 17 16:52:58 2022] Launched synth_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1/runme.log
+[Mon Jan 17 16:52:58 2022] Launched impl_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/test_main_fin.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 5052.441 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_puissance_10' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_puissance_10_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'puissance_10'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+"xelab -wto 78de84b91bcf4d27b7efd64ed4731d67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot tb_puissance_10_behav xil_defaultlib.tb_puissance_10 -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 78de84b91bcf4d27b7efd64ed4731d67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot tb_puissance_10_behav xil_defaultlib.tb_puissance_10 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.puissance_10 [puissance_10_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_puissance_10
+Built simulation snapshot tb_puissance_10_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim/xsim.dir/tb_puissance_10_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Jan 17 16:58:07 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 5052.441 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_puissance_10_behav -key {Behavioral:sim_1:Functional:tb_puissance_10} -tclbatch {tb_puissance_10.tcl} -view {D:/Projet_instrum_MHAH/tb_filter_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+source tb_puissance_10.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_puissance_10_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 5052.441 ; gain = 0.000
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan 17 17:00:19 2022] Launched impl_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/test_main_fin.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property top main [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan 17 17:02:18 2022] Launched synth_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1/runme.log
+[Mon Jan 17 17:02:18 2022] Launched impl_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 5052.441 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: "D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim/simulate.log"
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property top test_main_fin [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan 17 17:08:43 2022] Launched synth_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1/runme.log
+[Mon Jan 17 17:08:43 2022] Launched impl_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/test_main_fin.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_puissance_10' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_puissance_10_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/puissance_10.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'puissance_10'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+"xelab -wto 78de84b91bcf4d27b7efd64ed4731d67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot tb_puissance_10_behav xil_defaultlib.tb_puissance_10 -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 78de84b91bcf4d27b7efd64ed4731d67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot tb_puissance_10_behav xil_defaultlib.tb_puissance_10 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.puissance_10 [puissance_10_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_puissance_10
+Built simulation snapshot tb_puissance_10_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim/xsim.dir/tb_puissance_10_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Jan 17 17:24:16 2022...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 5052.441 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_puissance_10_behav -key {Behavioral:sim_1:Functional:tb_puissance_10} -tclbatch {tb_puissance_10.tcl} -view {D:/Projet_instrum_MHAH/tb_filter_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+WARNING: Simulation object /tb_puissance_10/puissance_101/etatp was not found in the design.
+source tb_puissance_10.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_puissance_10_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 5052.441 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 5052.441 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_puissance_10' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_puissance_10_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sim_1/new/tb_puissance_10.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_puissance_10'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+"xelab -wto 78de84b91bcf4d27b7efd64ed4731d67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot tb_puissance_10_behav xil_defaultlib.tb_puissance_10 -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 78de84b91bcf4d27b7efd64ed4731d67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot tb_puissance_10_behav xil_defaultlib.tb_puissance_10 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.puissance_10 [puissance_10_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_puissance_10
+Built simulation snapshot tb_puissance_10_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim/xsim.dir/tb_puissance_10_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Jan 17 17:25:01 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 5052.441 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_puissance_10_behav -key {Behavioral:sim_1:Functional:tb_puissance_10} -tclbatch {tb_puissance_10.tcl} -view {D:/Projet_instrum_MHAH/tb_filter_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+WARNING: Simulation object /tb_puissance_10/puissance_101/etatp was not found in the design.
+source tb_puissance_10.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_puissance_10_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 5052.441 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan 17 17:25:24 2022] Launched synth_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1/runme.log
+[Mon Jan 17 17:25:24 2022] Launched impl_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/test_main_fin.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property top main [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan 17 17:30:44 2022] Launched synth_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1/runme.log
+[Mon Jan 17 17:30:44 2022] Launched impl_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan 17 17:39:06 2022] Launched synth_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1/runme.log
+[Mon Jan 17 17:39:06 2022] Launched impl_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property top test_main_fin [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan 17 17:45:35 2022] Launched synth_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1/runme.log
+[Mon Jan 17 17:45:35 2022] Launched impl_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan 17 17:46:33 2022] Launched synth_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1/runme.log
+[Mon Jan 17 17:46:33 2022] Launched impl_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan 17 17:47:48 2022] Launched synth_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/synth_1/runme.log
+[Mon Jan 17 17:47:48 2022] Launched impl_1...
+Run output will be captured here: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Projet_instrum_MHAH/Projet_instrum_MHAH.runs/impl_1/test_main_fin.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property top tb_division [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: "D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 5052.441 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_division' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_division_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'division'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sim_1/new/tb_division.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_division'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+"xelab -wto 78de84b91bcf4d27b7efd64ed4731d67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot tb_division_behav xil_defaultlib.tb_division -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 78de84b91bcf4d27b7efd64ed4731d67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot tb_division_behav xil_defaultlib.tb_division -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.division [division_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_division
+Built simulation snapshot tb_division_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim/xsim.dir/tb_division_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Jan 17 17:53:59 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 5052.441 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Projet_instrum_MHAH/Projet_instrum_MHAH.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_division_behav -key {Behavioral:sim_1:Functional:tb_division} -tclbatch {tb_division.tcl} -view {D:/Projet_instrum_MHAH/tb_filter_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config D:/Projet_instrum_MHAH/tb_filter_behav.wcfg
+WARNING: Simulation object /tb_puissance_10/puissance_101/s_frequency was not found in the design.
+WARNING: Simulation object /tb_puissance_10/puissance_101/mille was not found in the design.
+WARNING: Simulation object /tb_puissance_10/puissance_101/cent was not found in the design.
+WARNING: Simulation object /tb_puissance_10/puissance_101/un was not found in the design.
+WARNING: Simulation object /tb_puissance_10/puissance_101/diz was not found in the design.
+WARNING: Simulation object /tb_puissance_10/puissance_101/etatp was not found in the design.
+WARNING: Simulation object /tb_puissance_10/puissance_101/etatf was not found in the design.
+WARNING: Simulation object /tb_puissance_10/puissance_101/virgule was not found in the design.
+WARNING: Simulation object /tb_puissance_10/puissance_101/Hz was not found in the design.
+source tb_division.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_division_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 5052.441 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1us
+run 10us
+ERROR: Index -1 out of bound 26 downto 0
+Time: 2210 ns  Iteration: 1  Process: /tb_division/division1/blocM
+  File: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd
+
+HDL Line: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:85
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 5us
+ERROR: Index -1 out of bound 26 downto 0
+Time: 2210 ns  Iteration: 1  Process: /tb_division/division1/blocM
+  File: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd
+
+HDL Line: D:/Projet_instrum_MHAH/Projet_instrum_MHAH.srcs/sources_1/new/division.vhd:85
+run 1us
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+save_wave_config {D:/Projet_instrum_MHAH/tb_filter_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 5052.441 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 17 17:59:57 2022...

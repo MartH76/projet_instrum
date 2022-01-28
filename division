@@ -1,0 +1,124 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date: 16.12.2021 09:32:48
+-- Design Name: 
+-- Module Name: division - Behavioral
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx leaf cells in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity division is
+ Port (
+ diviseur : in unsigned(19 downto 0);
+ frequency : out std_logic_vector(26 downto 0);
+ start : in std_logic;
+ clk : in std_logic);
+ end division;
+
+architecture Behavioral of division is
+
+signal d : unsigned(45 downto 0); --19 bits & 27 bits
+signal i : integer;
+signal resultat : unsigned (26 downto 0);
+signal reste : unsigned (19 downto 0);
+signal r_nb_per_buff : unsigned (19 downto 0);
+signal s_comp : std_logic;
+
+type etat is (init, comparaison,inf, sup, incr, add, fin_int, fin);
+
+signal etatp, etatf : etat;
+
+begin
+
+blocF : process(etatp)
+begin
+case etatp is
+	when init => etatf <= comparaison;
+	
+	when comparaison => if s_comp ='0' then
+						etatf <= inf;
+						else etatf<=sup;						
+					end if;	
+	when inf => etatf<=incr;
+	
+	when sup => etatf<=add;
+	when add => etatf<=incr;
+	when incr => if i = 27 then --attention a i
+	               etatf<=fin_int;
+	             else 
+	               etatf<=comparaison;
+	             end if;
+	when fin_int => etatf <=fin;
+	when fin => etatf <= fin;
+	when others => etatf<=init;
+end case;
+end process;
+
+blocM: process(start, clk)
+begin
+if start='1' then
+	etatp<=init;
+	elsif rising_edge(clk) then
+	etatp<=etatf;
+end if;
+end process;
+
+
+blocG: process(etatp)
+begin
+case etatp is 
+	when init => d <="0000000000000000000"& TO_UNSIGNED(100000000, 27);    --"000000000000000000001100100";
+	             reste <= d(45 downto 26);      --"0000000000000000000"&"1";
+	             resultat <= "000000000000000000000000000";
+	             i <= 0;
+	             r_nb_per_buff <= "00000000000000000000";
+	when comparaison => 
+	    if reste < diviseur then            
+                s_comp <= '0';
+        else
+                s_comp<= '1';
+        end if; 
+    when inf => 
+        resultat(26-i) <= '0';
+        reste <= reste(18 downto 0) & d(26-i);  
+    when sup =>
+        resultat(26-i) <= '1';
+        r_nb_per_buff <= reste - diviseur;
+    when add => reste <= r_nb_per_buff(18 downto 0) & d(26-i);
+    when incr => i <= i + 1;
+    when fin =>  frequency <= std_logic_vector(resultat(26 downto 0)); 
+    when fin_int => resultat <= resultat(25 downto 0)&"0";
+	when others =>  d <= "0000000000000000000"& TO_UNSIGNED(100000000, 27); --"0000000000000000000"&"101111101011110000100000000";
+	             reste<=d(45 downto 26);
+	             resultat <= "000000000000000000000000000";
+	             i <= 0;
+	             r_nb_per_buff <= "00000000000000000000";
+end case;
+end process;
+
+end Behavioral;
+

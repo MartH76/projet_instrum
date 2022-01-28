@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_division_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_division" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="107401fs"></ZoomEndTime>
+      <Cursor1Time time="70000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="166"></NameColumnWidth>
+      <ValueColumnWidth column_width="80"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="/tb_division/division1/resultat" type="array">
+      <obj_property name="ElementShortName">resultat[26:0]</obj_property>
+      <obj_property name="ObjectShortName">resultat[26:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_division/division1/etatf" type="other">
+      <obj_property name="ElementShortName">etatf</obj_property>
+      <obj_property name="ObjectShortName">etatf</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_division/division1/diviseur" type="array">
+      <obj_property name="ElementShortName">diviseur[19:0]</obj_property>
+      <obj_property name="ObjectShortName">diviseur[19:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_division/division1/i" type="other">
+      <obj_property name="ElementShortName">i</obj_property>
+      <obj_property name="ObjectShortName">i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_division/division1/frequency" type="array">
+      <obj_property name="ElementShortName">frequency[26:0]</obj_property>
+      <obj_property name="ObjectShortName">frequency[26:0]</obj_property>
+   </wvobject>
+</wave_config>
